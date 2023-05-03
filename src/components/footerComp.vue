@@ -20,8 +20,6 @@
                 <img src="/img/footer-pinterest.png" alt="pinterest-logo" class="mx-2">
                 <img src="/img/footer-periscope.png" alt="periscope-logo" class="mx-2">
             </div>
-
-
         </div>
     </footer>
 </template>
@@ -31,7 +29,9 @@
     @use "../style/main.scss" as *;
 
     footer{
+        position: relative;
         background-color: #303030;
+        z-index: 999999999999;
     }
 
     button{

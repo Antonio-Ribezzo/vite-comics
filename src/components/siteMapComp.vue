@@ -57,13 +57,36 @@
 
 <template>
     <section class="text-white">
-        <div class="container d-flex justify-content-between align-items-center">
+        <div id="container0" class="container d-flex justify-content-between align-items-center">
             <!-- lista sx -->
-            <div id="listSx" class="d-flex justify-content-between align items-center">
-                <div v-for="(el,index) in siteItems" :key="index">
-                    <h4>{{ el.title }}</h4>
+            <div class="d-flex justify-content-between align items-center">
+                <div>
+                    <h4>{{ siteItems[0].title }}</h4>
                     <ul>
-                        <li v-for="(el,index) in siteItems[index].items" :key="index">
+                        <li v-for="(el, index) in siteItems[0].items" :key="index">
+                            <a href="#">{{ el }}</a>
+                        </li>
+                    </ul>
+
+                    <h4 class="mt-2">{{ siteItems[1].title }}</h4>
+                    <ul>
+                        <li v-for="(el, index) in siteItems[1].items" :key="index">
+                            <a href="#">{{ el }}</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="ms-4">
+                    <h4>{{ siteItems[2].title }}</h4>
+                    <ul>
+                        <li v-for="(el, index) in siteItems[2].items" :key="index">
+                            <a href="#">{{ el }}</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="ms-4">
+                    <h4>{{ siteItems[3].title }}</h4>
+                    <ul>
+                        <li v-for="(el, index) in siteItems[3].items" :key="index">
                             <a href="#">{{ el }}</a>
                         </li>
                     </ul>
@@ -85,11 +108,17 @@
         background-image: url('/img/footer-bg.jpg');
         background-repeat: no-repeat;
         background-size: cover;
+        height: 25rem;
+        width: 100%;
+        #container0{
+            height: 100%;
+            width: 100%;
+        }
     }
 
-    #listSx{
-        height: 80%;
-        width: 50%;
+    h4{
+        font-family: 'Asap Condensed', sans-serif;
+        font-weight: 600;
     }
 
     ul{
@@ -99,6 +128,7 @@
         li{
             list-style: none;
             font-family: 'Khula', sans-serif;
+            font-size: 0.8rem;
             a{
                 text-decoration: none;
                 color: grey;
