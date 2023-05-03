@@ -1,20 +1,20 @@
 <script>
   export default{
-    name: 'contentComp',
+    name: 'contentComp'
   }
 </script>
 
 <template>
-    <div>
+    <main>
         <div class="container py-4">
             <h2 class="text-white"> ... Content goes here ... </h2>
         </div>
 
-    </div>
+    </main>
 </template>
 
 <style lang="scss" scoped>
-    div{
+    main{
         background-color: #1c1c1c;
         div{
             h2{

@@ -64,7 +64,7 @@
     <header class="container d-flex justify-content-between align-items-center">
         <!-- logo sx -->
         <div>
-            <img src="../../public/img/dc-logo.png" alt="logo-small">
+            <img src="/img/dc-logo.png" alt="logo-small">
         </div>
         <!-- navbar dx -->
         <nav>
@@ -88,6 +88,7 @@
             margin: 0 1rem;
             padding: 3rem 0;
             font-family: 'Asap Condensed', sans-serif;
+            font-weight: 600;
             a{
                 text-decoration: none;
                 color: #464646;
