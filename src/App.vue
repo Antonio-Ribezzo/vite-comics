@@ -9,9 +9,7 @@
 </script>
 
 <template>
-  <div>
-    <headerComp/>
-  </div>
+  <headerComp/>
 </template>
 
 <style>

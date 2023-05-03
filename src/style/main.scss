@@ -1,2 +1,10 @@
-// @import './partials/variables.scss';
-// @import './partials/mixin.scss';
+@import './partials/variables.scss';
+@import './partials/mixin.scss';
+
+.colorLightBlue{
+    color: $colorLightBlue;
+}
+
+.borderLightBlue{
+    border-bottom: 0.5rem solid $colorLightBlue;
+}
