@@ -36,7 +36,7 @@
 </script>
 
 <template>
-    <div id="store">
+    <section>
         <div class="container py-5">
             <ul class="d-flex justify-content-around align-items-center">
                 <li v-for="(el,index) in storeItems" :key="index">
@@ -47,14 +47,14 @@
                 </li>
             </ul>
         </div>
-    </div>
+    </section>
 </template>
 
 <style lang="scss" scoped>
     // importo il foglio di stile principale
     @use "../style/main.scss" as *;
 
-    #store{
+    section{
         background-color: $colorLightBlue;
     }
 
