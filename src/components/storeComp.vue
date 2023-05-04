@@ -26,7 +26,7 @@
                 },
                 {
                     icon: '/img/buy-dc-power-visa.svg',
-                    nome:'DC POWER VISA',
+                    nome:'DCPOWERVISA',
                     url: '/dc-power-visa'
                 }
             ]
@@ -56,6 +56,8 @@
 
     section{
         background-color: $colorLightBlue;
+        z-index: 999999;
+        position: relative;
     }
 
     ul{
@@ -66,8 +68,11 @@
             a{
                 text-decoration: none;
                 color: white;
-                &:hover{
-                    background-color: lightblue;
+                span{
+                    padding: 0.6rem;
+                    &:hover{
+                        background-color: rgba(96, 108, 112, 0.741);
+                    }
                 }
                 img{
                     max-height: 3rem;

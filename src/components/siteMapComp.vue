@@ -133,7 +133,7 @@
                 text-decoration: none;
                 color: grey;
                 &:hover{
-                    background-color: lightblue;
+                    background-color: rgba(96, 108, 112, 0.741);
                 }
             }
         }

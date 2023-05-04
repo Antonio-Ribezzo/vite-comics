@@ -93,7 +93,7 @@
                 text-decoration: none;
                 color: #464646;
                 &:hover{
-                    background-color: lightblue;
+                    background-color: #0282f99e;
                 }
             }
         }
