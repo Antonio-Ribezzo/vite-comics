@@ -75,6 +75,8 @@
             </ul>
         </nav>
     </header>
+    <div id="jumbotron">
+    </div>
 </template>
 
 <style lang="scss" scoped>
@@ -97,5 +99,14 @@
                 }
             }
         }
+    }
+
+    #jumbotron{
+        height: 25rem;
+        width: 100%;
+        background-image: url('/img/jumbotron.jpg');
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 </style>
