@@ -7,8 +7,12 @@
 
 <template>
     <li class="my-4">
-        <img :src="ArrayCard.thumb" alt="">
-        <p class="mt-3 text-start">{{ ArrayCard.series }}</p>
+        <a class="text-white" href="#">
+            <img :src="ArrayCard.thumb" :alt="ArrayCard.series">
+            <p class="mt-2 text-start">{{ ArrayCard.series }}</p>
+            <span class="m-0 text-start">{{ ArrayCard.price }}</span>
+            <span class="m-0 text-start">{{ ArrayCard.type }}</span>
+        </a>
     </li>
 </template>
 
@@ -16,9 +20,23 @@
     li{
         list-style: none;
         width: calc((100% / 6) - 1rem);
-        img{
-            height: 10rem;
-            width: 100%;
+        a{
+            text-decoration: none;
+            &:hover{
+                filter: brightness(1.2);
+            }
+
+            img{
+                height: 10rem;
+                width: 100%;
+            }
+
+            span{
+                display: block;
+                font-size: 0.7rem;
+                color: grey;
+                text-transform: capitalize;
+            }
         }
     }
 </style>

@@ -89,16 +89,15 @@
 
 <template>
     <main>
-        <div class="container py-4 text-center">
+        <div class="container py-5 text-center position-relative">
+            <div>
+                <span id="currentSeries" class="text-uppercase text-white position-absolute">current series</span>
+            </div>
             <ul class="d-flex justify-content-between align-items-start flex-wrap">
                 <!-- card -->
                 <cardItemComp v-for="(el,index) in comicsItems" 
                     :key="index" 
                     :ArrayCard="el" />
-                <!-- <li v-for="(el,index) in comicsItems" :key="index" class="my-4">
-                    <img :src="el.thumb" alt="">
-                    <p class="mt-3 text-start">{{ el.series }}</p>
-                </li> -->
             </ul>
             <button class="text-white text-uppercase">load more</button>
         </div>
@@ -113,6 +112,17 @@
     main{
         background-color: #1c1c1c;
         div{
+            #currentSeries{
+                top: -20px;
+                left: 0;
+                font-family: 'Asap Condensed', sans-serif;
+                font-weight: 600;
+                font-size: 1.2rem;
+                background-color: $colorLightBlue;
+                border: none;
+                padding: 0.5rem 1rem;
+
+            }
             ul{
                 color: white;
             }
@@ -123,6 +133,9 @@
                 background-color: $colorLightBlue;
                 border: none;
                 padding: 0.5rem 2rem;
+                &:hover{
+                    background-color: #0282f98e;
+                }
             }
         }
     }
