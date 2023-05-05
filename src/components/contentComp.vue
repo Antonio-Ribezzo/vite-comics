@@ -1,5 +1,5 @@
 <script>
-    import CardItemComp from './cardItemComp.vue'
+    import CardItemComp from './CardItemComp.vue'
 
     export default{
         name: 'contentComp',
@@ -97,7 +97,8 @@
                 <!-- card -->
                 <cardItemComp v-for="(el,index) in comicsItems" 
                     :key="index" 
-                    :ArrayCard="el" />
+                    :ArrayCard="el" 
+                />
             </ul>
             <button class="text-white text-uppercase">load more</button>
         </div>
